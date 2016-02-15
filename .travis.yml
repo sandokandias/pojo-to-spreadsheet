@@ -8,3 +8,6 @@ jdk:
 
 script:
   - mvn clean test
+
+after_success:
+  - pip install --user codecov && codecov
