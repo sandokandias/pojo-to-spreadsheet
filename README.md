@@ -9,7 +9,7 @@ An Java api to export pojos in spreadsheets
 
 ## Status
 
-This project is currently under development. Feel free to implement new types or suggest improvements / corrections via pull request, as well as any correction of English used incorrectly.
+This project is currently under development. Feel free to implement new formats or suggest improvements / corrections via pull request, as well as any correction of English used incorrectly.
 \0/
 
 ## Features
