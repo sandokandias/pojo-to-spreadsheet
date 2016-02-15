@@ -60,18 +60,19 @@ public class Employee implements Serializable {
 
 // Writer
 ExcelPoiWriter<Employee> writer = new ExcelPoiWriterBuilder<>()
-					.writerMode(ExcelWriterMode.IN_FILE)
-     .excelType(ExcelType.XLS)
-					.excelPath("./employees.xls")
-					.rowSetter(new AnnotationRowSetter<>())
-					.build();
+	.writerMode(ExcelWriterMode.IN_FILE)
+	.excelType(ExcelType.XLS)
+	.excelPath("./employees.xls")
+	.rowSetter(new AnnotationRowSetter<Employee>())
+	.build();
 
 List<Employee> employees = repository.getEmployees();
 
 ExcelWriterResult result = writer.write(employees);
 
-// If you need the name of the files to build a download response for example, you can get it from the result
-// It's a list, because it can break in multi files when your excel file exceed the limit of rows
+/* If you need the name of the files to build a download response for example, you can get it from the result
+ *  It's a list, because it can break in multi files when your excel file exceed the limit of rows
+ */
 List<String> filesName =result.getFilesName();
 ```
 
