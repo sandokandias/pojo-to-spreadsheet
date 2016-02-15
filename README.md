@@ -84,4 +84,6 @@ List<String> filesName =result.getFilesName();
 
 ## Backlog
 
+* Publish artifact
 * Support more formats
+* Scala version
