@@ -57,7 +57,7 @@ public class Employee implements Serializable {
     }
 
     private static Employee createEmployee(int i) {
-        return new Employee("employee " + i, "01252460643", String.format("employee.%d@zup.com.br", i), new Date(), i,
+        return new Employee("employee " + i, "01252460643", String.format("employee.%d@gmail.com", i), new Date(), i,
                 new BigDecimal(i * 2), LocalDate.now(), LocalDateTime.now());
     }
 }
